@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+numpy
+opencv-python-headless
+pillow
+onnxruntime
+boto3
+pydantic
+python-multipart
+aiofiles
+sqlalchemy 
+pymysql
