@@ -38,21 +38,21 @@ It provides:
 ## 🧩 Project Structure
 
 src/
-├── api/
-│ ├── inference.py
-│ ├── animals.py
-│ ├── gps.py
-│ ├── analytics.py
-│ ├── alerts.py
-│ └── upload.py
-├── models/
-│ └── model.onnx
-├── database/
-│ └── connection.py
-├── utils/
-│ ├── preprocessing.py
-│ └── geofence.py
-└── main.py
+- ├── api/
+- │ ├── inference.py
+- │ ├── animals.py
+- │ ├── gps.py
+- │ ├── analytics.py
+- │ ├── alerts.py
+- │ └── upload.py
+- ├── models/
+- │ └── model.onnx
+- ├── database/
+- │ └── connection.py
+- ├── utils/
+- │ ├── preprocessing.py
+- │ └── geofence.py
+- └── main.py
 
 
 
@@ -78,13 +78,13 @@ git clone https://github.com/madzyy/pig-monitoring-backend.git
 cd pig-monitoring-backend
 ```
 
-##Install dependencies
+## Install dependencies
 ```sh
 pip install -r requirements.txt
 ```
-##Set environment variables
+## Set environment variables
 
-##Create .env:
+## Create .env:
 ```sh
 DB_HOST=
 DB_USER=
@@ -94,23 +94,23 @@ AWS_S3_BUCKET=
 AWS_REGION=
 ```
 
-##Run locally
+## Run locally
 ```sh
 uvicorn main:app --reload
 ```
 
-##🐳 Docker Deployment
-##Build image
+## 🐳 Docker Deployment
+## Build image
 ```sh
 docker build -t pig-backend .
 ```
 
-##Run container
+## Run container
 ```sh
 docker run -p 8000:8000 --env-file .env pig-backend
 ```
 
-##☁ AWS Deployment (Summary)
+## ☁ AWS Deployment (Summary)
 
 - Backend deployed with Docker
 
